@@ -1,0 +1,19 @@
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://${BK_DB_SERVER_NAME:localhost}:${BK_DB_SERVER_PORT:5432}/${BK_DB_NAME:bk}
+        username: ${BK_DB_USER:bk}
+        password: ${BK_DB_PASSWORD:bk}
+    security:
+        user:
+            name: admin
+    flyway:
+        enabled: false
+        
+
+server:
+    port: ${BK_APP_PORT:8021}
+
+logging:
+  level:
+    '[org.springframework.jdbc.datasource]': debug
