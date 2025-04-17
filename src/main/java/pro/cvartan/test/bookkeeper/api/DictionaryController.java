@@ -21,8 +21,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
-
-
 @RestController
 @RequiredArgsConstructor
 public class DictionaryController {
